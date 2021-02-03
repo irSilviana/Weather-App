@@ -1,0 +1,145 @@
+div.row.p-2 {
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333f6e;
+  font-size: 1.2rem;
+  line-height: 24px;
+  margin: 20px 0 10px;
+}
+
+h3 {
+  color: #636875;
+  font-size: 1rem;
+  margin: 0;
+}
+p {
+  color: #636875;
+}
+span.tanggal {
+  color: #636875;
+}
+
+img {
+  width: 120px;
+}
+
+span.temperature {
+  color: #333f6e;
+  font-size: 2.7rem;
+  margin: 0;
+  display: inline-block;
+}
+
+sup.units {
+  color: #333f6e;
+  font-size: 1rem;
+  top: -20px;
+  left: 0px;
+}
+
+footer {
+  text-align: left;
+  color: #828794;
+  font-size: 12px;
+}
+
+a {
+  color: #3858a8;
+  text-decoration: none;
+}
+a:hover {
+  color: #06122e;
+  text-decoration: underline;
+}
+
+span.bigClock {
+  color: #626674;
+  font-size: 1.5rem;
+  font-family: calibri;
+  margin: 0;
+  line-height: 32px;
+}
+sup.time {
+  font-size: 0.8rem;
+  top: -6px;
+  left: 2px;
+}
+
+p.dateTime {
+  color: #636875;
+  margin: 0;
+}
+
+ul.weather-detail {
+  list-style-type: none;
+  color: #434752;
+  font-size: 13px;
+  position: relative;
+}
+
+span#description {
+  text-transform: capitalize;
+  display: block;
+}
+li {
+  margin: 0px;
+  display: inline;
+}
+
+i.fa-map-marker-alt {
+  color: #1476a5;
+  font-size: 1.9rem;
+  transition: all 200ms ease-in-out;
+  top: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+i:hover.fa-map-marker-alt {
+  color: #134f6b;
+}
+
+ul.ul-cities,
+li.li-cities {
+  color: #3858a8;
+  text-decoration: none;
+  font-size: 13px;
+  text-align: left;
+  list-style-type: none;
+  display: inline;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+li.li-cities:hover {
+  color: #06122e;
+  text-decoration: underline;
+}
+
+.weeks {
+  text-align: center;
+}
+
+.tempWeeks {
+  text-align: center;
+  font-size: 13px;
+}
+
+.form-control {
+  display: inline;
+  width: 125px;
+  margin-bottom: 5px;
+}
+
+.btn-secondary {
+  margin-bottom: 5px;
+}
+
+#enter-city {
+  font-size: 14px;
+  line-height: 24px;
+}
