@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | SheCodes | IrSilviana</title>
+    <script
+      src="https://kit.fontawesome.com/eb42c3a17f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <!-- CSS only -->
+  </head>
+  <body>
+    <div class="container p-4">
+      <div class="row shadow p-2 bg-white rounded border">
+        <div class="col-sm">
+          <div class="row cities">
+            <div class="col-12">
+              <div class="card border-0">
+                <div class="card-body">
+                  <ul class="ul-cities">
+                    <li class="li-cities">Jakarta</li>
+                    |
+                    <li class="li-cities">London</li>
+                    |
+                    <li class="li-cities">Paris</li>
+                    |
+                    <li class="li-cities">New York</li>
+                    |
+                    <li class="li-cities">Los Angeles</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row px-1">
+            <div class="col">
+              <div class="card border-0">
+                <div class="card-body">
+                  <form id="search-city">
+                    <input
+                      type="search"
+                      id="enter-city"
+                      class="form-control shadow-sm"
+                      placeholder="Enter a city"
+                      autofocus="on"
+                      autocomplete="off"
+                    />
+                    <input
+                      type="submit"
+                      value="Search"
+                      class="btn btn-secondary shadow-sm"
+                    />
+
+                    <i class="fas fa-map-marker-alt" id="my-location"></i>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3 px-3">
+            <div class="card border-0" style="width: 12rem">
+              <div class="card-body p-0">
+                <div class="row">
+                  <div class="col">
+                    <h1 id="city"></h1>
+                    <h3 id="day"></h3>
+                    <p>
+                      <span class="dateTime" id="date"></span>
+                      <br />
+                      <span class="bigClock" id="clock"></span>
+                      <sup class="time" id="am-pm"></sup>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 16rem">
+              <div class="card-body p-0">
+                <div class="row">
+                  <div class="col">
+                    <img
+                      src="images/Sun_Two Color.png"
+                      alt="Partly Sunny Weather"
+                    />
+                    <span class="temperature" id="temperature"></span>
+                    <sup class="units">
+                      <!-- <a href="#" id="celcius-link"> -->
+                      ℃
+                      <!-- </a>  -->
+                      <!-- | <a href="#" id="fahrenheit-link">℉</a> -->
+                    </sup>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <ul class="weather-detail">
+                      <li> <span id="description"></span></li>
+                      <li>Cloudines: <span id="cloud"></span></span>%</li>
+                      <li>Wind: <span id="wind"></span>km/h</li>
+                      <li>Humidity: <span id="humidity"></span>%</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3 weeks">
+            <div class="col">
+              Tue <br />☁ <br />
+              <span class="tempWeeks"> 28°/22°</span>
+            </div>
+            <div class="col">
+              Wed <br />☀ <br />
+              <span class="tempWeeks"> 24°/18° </span>
+            </div>
+            <div class="col">
+              Thu<br />🌨 <br />
+              <span class="tempWeeks"> 28°/20° </span>
+            </div>
+            <div class="col">
+              Fri<br />🌩 <br />
+              <span class="tempWeeks"> 27°/23° </span>
+            </div>
+            <div class="col">
+              Sat<br />🌨<br />
+              <span class="tempWeeks"> 23°/19° </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3 p-2">
+        <div class="col">
+          <footer>
+            <i class="fas fa-mobile-alt"></i> Responsive Design Open-source Code
+
+            <br />
+            Created by
+            <a href="https://www.linkedin.com/in/irsilviana/" target="_blank"
+              >IrSilviana</a
+            >
+            from
+            <a
+              href="https://www.shecodes.io/students/259-irfani-silviana"
+              target="_blank"
+              >SheCodes</a
+            >
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
